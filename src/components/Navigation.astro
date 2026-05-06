@@ -1,0 +1,69 @@
+---
+interface NavLinks {
+  name: string;
+  href: string;
+}
+
+const navLinks: NavLinks[] = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'Blog',
+    href: '/blog',
+  },
+];
+
+import logo from '../assets/logo.svg';
+---
+
+<nav class="navbar navbar-expand-lg bg-primary-subtle">
+  <div class="container gap-2 py-2 gap-5">
+    <img
+      src={logo.src}
+      class="img-fluid navLogo"
+      alt="Svelte + Bootstrap by Saaqi"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 my-lg-0 my-3 gap-3">
+        {
+          navLinks.map((link) => {
+            return (
+              <li class="nav-item my-lg-0 my-2 h5 text-uppercase bg-gradient rounded-3">
+                <a class="nav-link" href={link.href}>
+                  {link.name}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  import 'bootstrap/js/dist/collapse.js';
+</script>
+
+<style>
+  .navLogo {
+    width: 80px;
+    height: auto;
+  }
+  .navSpacer {
+    min-height: 80px;
+  }
+</style>

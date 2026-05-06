@@ -1,0 +1,35 @@
+{
+  "name": "astro-practice",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=24.13.0"
+  },
+  "packageManager": "pnpm@10.33.3+sha512.a19744364a7e248b92657a4ca5973f9354d21caf982579674b1c539f32c7420c47138ad8b1254df07aba9bc782d9b3029e3db34d5dbff974326eb74dac8ff489",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check && eslint",
+    "build-bootstrap": "sass ./src/styles/bs-dynamic.scss ./src/styles/bootstrap.css"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "astro": "^6.2.2",
+    "bootstrap": "^5.3.8",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^25.6.0",
+    "@typescript-eslint/parser": "^8.59.2",
+    "astro-head-check": "^1.1.0",
+    "astro-link-validator": "github:rodgtr1/astro-link-validator",
+    "astro-purgecss": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "sass-embedded": "^1.99.0"
+  }
+}
