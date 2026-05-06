@@ -7,11 +7,11 @@ interface NavLinks {
 const navLinks: NavLinks[] = [
   {
     name: 'Home',
-    href: '/',
+    href: '/astro-bootstrap-starter-saaqi',
   },
   {
     name: 'Blog',
-    href: '/blog',
+    href: '/astro-bootstrap-starter-saaqi/blog',
   },
 ];
 
@@ -20,11 +20,7 @@ import logo from '../assets/logo.svg';
 
 <nav class="navbar navbar-expand-lg bg-primary-subtle">
   <div class="container gap-2 py-2 gap-5">
-    <img
-      src={logo.src}
-      class="img-fluid navLogo"
-      alt="Svelte + Bootstrap by Saaqi"
-    />
+    <img src={logo.src} class="img-fluid navLogo" alt="Svelte + Bootstrap by Saaqi" />
     <button
       class="navbar-toggler"
       type="button"

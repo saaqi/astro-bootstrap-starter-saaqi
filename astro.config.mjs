@@ -1,16 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import purgecss from 'astro-purgecss';
-import linkValidator from 'astro-link-validator';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://saaqi.github.io',
-  base: '/astro-bootstrap-starter-saaqi/',
+  base: '/astro-bootstrap-starter-saaqi',
   // ...
   integrations: [
     // ... other integrations
-    linkValidator(),
     purgecss({
       content: [
         './src/pages/index.astro',

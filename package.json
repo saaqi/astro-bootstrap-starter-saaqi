@@ -25,7 +25,6 @@
     "@types/node": "^25.6.0",
     "@typescript-eslint/parser": "^8.59.2",
     "astro-head-check": "^1.1.0",
-    "astro-link-validator": "github:rodgtr1/astro-link-validator",
     "astro-purgecss": "^6.0.1",
     "eslint": "^10.3.0",
     "eslint-plugin-astro": "^1.7.0",
