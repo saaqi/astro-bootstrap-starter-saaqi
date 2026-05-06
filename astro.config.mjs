@@ -5,6 +5,8 @@ import linkValidator from 'astro-link-validator';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://saaqi.github.io',
+  base: '/astro-bootstrap-starter-saaqi/',
   // ...
   integrations: [
     // ... other integrations
@@ -13,7 +15,7 @@ export default defineConfig({
       content: [
         './src/pages/index.astro',
         './src/**/*.{astro,svelte,ts,js}',
-        'bootstrap/js/dist/collapse.js'
+        'bootstrap/js/dist/collapse.js',
         // `${bootstrap}/js/dist/modal.js`
       ],
       safelist: [/astro/, /svelte/, /modal/, /:global/, /active/],
