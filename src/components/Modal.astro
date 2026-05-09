@@ -1,10 +1,16 @@
 ---
+interface Props {
+  btnTitle?: string;
+  modalTitle?: string;
+  id: string;
+  body?: string;
+}
 const {
   btnTitle = 'Demo Modal',
   modalTitle = 'Demo Modal title',
-  id = 'demoModal',
+  id,
   body = `Hello, I'm a modal!`
-} = Astro.props;
+}: Props = Astro.props;
 
 const idLabel = id + 'Label';
 ---
