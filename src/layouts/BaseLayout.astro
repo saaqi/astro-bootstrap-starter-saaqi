@@ -8,7 +8,6 @@ import favicon from '../assets/favicon.ico';
 const {
   title = 'Astro with Bootstrap by Saaqi',
   description = 'This template should help get you started developing with Astro with bootstrap.',
-  class: className = '',
   ...attrs
 } = Astro.props;
 ---
@@ -28,7 +27,7 @@ const {
     <header>
       <Navigation />
     </header>
-    <main class={'py-5 ' + className} {...attrs}>
+    <main {...attrs}>
       <slot />
     </main>
     <Footer />
