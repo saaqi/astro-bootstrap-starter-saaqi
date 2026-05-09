@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import purgecss from 'astro-purgecss';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://saaqi.github.io',
@@ -12,13 +14,14 @@ export default defineConfig({
     purgecss({
       content: [
         './src/pages/index.astro',
-        './src/**/*.{astro,svelte,ts,js}',
+        './src/**/*.{astro,html,md,ts,js}',
         'bootstrap/js/dist/collapse.js',
-        // `${bootstrap}/js/dist/modal.js`
+        'bootstrap/js/dist/modal.js'
       ],
-      safelist: [/astro/, /svelte/, /modal/, /:global/, /active/],
+      safelist: [/astro/, /modal/, /:global/, /active/],
       // Use blocklist to explicitly force removal of selectors
-      blocklist: ['unused-legacy-class'],
+      blocklist: ['unused-legacy-class']
     }),
-  ],
+    sitemap()
+  ]
 });

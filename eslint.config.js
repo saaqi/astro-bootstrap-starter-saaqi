@@ -8,19 +8,19 @@ export default [
   {
     files: ['src/**/*.{js,ts,astro,svelte,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     plugins: {
-      'jsx-a11y': jsxA11y,
+      'jsx-a11y': jsxA11y
     },
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
-          jsx: true,
-        },
-      },
+          jsx: true
+        }
+      }
     },
     rules: {
       // override/add rules settings here, such as:
       // "astro/no-set-html-directive": "error"
-      'jsx-a11y/alt-text': 'error',
-    },
-  },
+      'jsx-a11y/alt-text': 'error'
+    }
+  }
 ];

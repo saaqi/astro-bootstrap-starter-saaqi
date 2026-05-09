@@ -3,7 +3,7 @@ const {
   btnTitle = 'Demo Modal',
   modalTitle = 'Demo Modal title',
   id = 'demoModal',
-  body = `Hello, I'm a modal!`,
+  body = `Hello, I'm a modal!`
 } = Astro.props;
 
 const idLabel = id + 'Label';
@@ -22,7 +22,8 @@ const idLabel = id + 'Label';
         <h1 class="modal-title fs-5" id={idLabel}>
           {modalTitle}
         </h1>
-        <button type="button" class="btn-close btn btn-primary btn-lg" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close btn btn-primary btn-lg" data-bs-dismiss="modal" aria-label="Close">
+        </button>
       </div>
       <div class="modal-body">
         {body}
